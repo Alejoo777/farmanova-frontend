@@ -1,0 +1,10 @@
+[
+  { "id": 1, "nombre": "Acetaminofén 500 mg", "categoria": "Analgésicos", "precio": 8500, "descripcion": "Alivia el dolor leve a moderado y baja la fiebre." },
+  { "id": 2, "nombre": "Ibuprofeno 400 mg", "categoria": "Analgésicos", "precio": 12000, "descripcion": "Antiinflamatorio para dolor muscular, de cabeza y dental." },
+  { "id": 3, "nombre": "Loratadina 10 mg", "categoria": "Alergias", "precio": 9800, "descripcion": "Antihistamínico para la rinitis alérgica y la urticaria." },
+  { "id": 4, "nombre": "Omeprazol 20 mg", "categoria": "Digestivo", "precio": 15500, "descripcion": "Reduce la acidez estomacal y el reflujo." },
+  { "id": 5, "nombre": "Suero oral", "categoria": "Digestivo", "precio": 4200, "descripcion": "Rehidratación en casos de diarrea o vómito." },
+  { "id": 6, "nombre": "Vitamina C 1000 mg", "categoria": "Vitaminas", "precio": 18900, "descripcion": "Suplemento que apoya las defensas del organismo." },
+  { "id": 7, "nombre": "Alcohol antiséptico 70%", "categoria": "Cuidado personal", "precio": 6500, "descripcion": "Desinfección de la piel intacta y de superficies." },
+  { "id": 8, "nombre": "Jarabe para la tos", "categoria": "Respiratorio", "precio": 14300, "descripcion": "Calma la tos seca e irritativa." }
+]
