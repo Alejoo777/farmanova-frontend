@@ -1,0 +1,97 @@
+/* Spinner de carga */
+.spinner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) 0;
+  color: var(--color-muted);
+}
+
+.spinner::before {
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 3px solid var(--color-accent);
+  border-top-color: var(--color-primary);
+  border-radius: 50%;
+  animation: girar 0.8s linear infinite;
+}
+
+@keyframes girar {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Alertas de error y de éxito */
+.alert {
+  margin-bottom: var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  border-left: 4px solid;
+  border-radius: var(--radius);
+  font-weight: 600;
+}
+
+.alert--error {
+  background: var(--color-error-bg);
+  border-color: var(--color-error);
+  color: var(--color-error);
+}
+
+.alert--success {
+  background: var(--color-success-bg);
+  border-color: var(--color-success);
+  color: var(--color-success);
+}
+
+/* Mensaje informativo, como "sin resultados" en el buscador */
+.alert--info {
+  background: #e0f2fe;
+  border-color: #075985;
+  color: #075985;
+}
+
+/* Efectos al pasar el mouse */
+.btn,
+.navbar__links a,
+.card {
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--color-primary-dark);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.navbar__links a:hover {
+  background: var(--color-accent);
+}
+
+.navbar__links a.active:hover {
+  background: var(--color-primary-dark);
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(15, 118, 110, 0.2);
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner::before {
+    animation-duration: 2s;
+  }
+
+  .btn,
+  .navbar__links a,
+  .card {
+    transition: none;
+  }
+}
