@@ -1,0 +1,65 @@
+/* Paleta, tipografía y espacios de FarmaNova */
+:root {
+  /* Colores (tomados del logo) */
+  --color-primary: #0f766e;
+  --color-primary-dark: #115e59;
+  --color-primary-light: #14b8a6;
+  --color-accent: #99f6e4;
+  --color-bg: #f0fdfa;
+  --color-surface: #ffffff;
+  --color-text: #134e4a;
+  --color-muted: #475569;
+  --color-border: #cce7e3;
+
+  /* Estados */
+  --color-error: #991b1b;
+  --color-error-bg: #fee2e2;
+  --color-success: #166534;
+  --color-success-bg: #dcfce7;
+
+  /* Tipografía */
+  --font-main: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+  --font-size-base: 1rem;
+
+  /* Espacios */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+
+  /* Bordes y sombras */
+  --radius: 12px;
+  --shadow: 0 2px 8px rgba(15, 118, 110, 0.12);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-primary);
+  line-height: 1.2;
+}
+
+a {
+  color: var(--color-primary);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
