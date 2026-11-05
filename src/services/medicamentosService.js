@@ -2,7 +2,7 @@ import { API_URL } from "./config";
 
 // Devuelve la lista completa de medicamentos
 export async function getMedicamentos() {
-  const response = await fetch(`${API_URL}/medicamentos.json`);
+  const response = await fetch(`${API_URL}/medicamentos`);
   if (!response.ok) {
     throw new Error("No se pudieron cargar los medicamentos");
   }
