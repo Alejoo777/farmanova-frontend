@@ -30,15 +30,14 @@ function Detalle() {
     );
   }
 
-  return (
+    return (
     <section className="detalle">
       <Link to="/">← Volver al catálogo</Link>
-      <span className="card__categoria">{medicamento.categoria}</span>
+      <span className="card__categoria">{medicamento.laboratorioNombre}</span>
       <h1>{medicamento.nombre}</h1>
       <p className="card__precio">
         ${medicamento.precio.toLocaleString("es-CO")}
       </p>
-      <p>{medicamento.descripcion}</p>
       <Link to="/pedido" className="btn">
         Pedir este producto
       </Link>
